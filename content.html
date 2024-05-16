@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Crazy Exotic Fish Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #2a5298;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-bottom: 2px solid #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff6347;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            background: #ff6347;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffa07a;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main section {
+            margin: 20px 0;
+        }
+
+        main section h2 {
+            color: #ffa07a;
+        }
+
+        .highlight {
+            color: #ff6347;
+            font-weight: bold;
+        }
+
+        .fish-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .fish-images img {
+            margin: 10px;
+            width: 200px;
+            height: auto;
+            border: 3px solid #fff;
+            border-radius: 10px;
+        }
+
+        .bubbles {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: rise 10s infinite ease-in;
+            opacity: 0.5;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-2000px);
+                opacity: 0;
+            }
+        }
+
+        .bubble-flurry {
+            animation: flurry 2s ease-out forwards;
+        }
+
+        @keyframes flurry {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crazy Exotic Fish Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the <span class="highlight">Crazy Exotic Fish Store</span>! We specialize in providing the most <span class="highlight">vibrant and exotic fish</span> for your aquariums. Our mission is to bring a splash of color and excitement to your home or office.</p>
+        </section>
+        <section id="highlights">
+            <h2>Store Highlights</h2>
+            <p>At our store, you can find:</p>
+            <ul>
+                <li><span class="highlight">Rare Species</span> from all over the world.</li>
+                <li>High-quality <span class="highlight">aquarium supplies</span>.</li>
+                <li>Expert <span class="highlight">advice</span> and <span class="highlight">customer service</span>.</li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Our Location</h2>
+            <p>Visit us at our unique location:</p>
+            <p><span class="highlight">123 Ocean Avenue, Atlantis, Underwater</span></p>
+        </section>
+        <section id="gallery">
+            <h2>Fish Gallery</h2>
+            <div class="fish-images">
+                <img src="Fish-png-1.webp" alt="Fish 1">
+                <img src="Fish-png-2.jpg" alt="Fish 2">
+                <img src="Fish-png-3.jpg" alt="Fish 3">
+                <img src="Fish-png-4.jpg" alt="Fish 4">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <span class="highlight">reach out</span> to us!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Crazy Exotic Fish Store</p>
+    </footer>
+    <div class="bubbles bubble-flurry">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+</body>
+</html>
