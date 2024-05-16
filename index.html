@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Exotic Fish Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-bottom: 2px solid #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff6347;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            background: #ff6347;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffa07a;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        main section {
+            margin: 20px 0;
+        }
+
+        main section h2 {
+            color: #ffa07a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-top: 2px solid #fff;
+        }
+
+        .bubbles {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: rise 10s infinite ease-in;
+            opacity: 0.5;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-2000px);
+                opacity: 0;
+            }
+        }
+
+        .bubble:nth-child(1) {
+            left: 20%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+
+        .bubble:nth-child(2) {
+            left: 40%;
+            animation-delay: 2s;
+            animation-duration: 15s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 60%;
+            animation-delay: 4s;
+            animation-duration: 20s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 80%;
+            animation-delay: 1s;
+            animation-duration: 18s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 50%;
+            animation-delay: 3s;
+            animation-duration: 25s;
+        }
+
+        .fish {
+            position: absolute;
+            width: 100px;
+            animation: swim 15s infinite linear;
+        }
+
+        @keyframes swim {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+
+        .fish:nth-child(1) {
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .fish:nth-child(2) {
+            top: 40%;
+            animation-delay: 5s;
+        }
+
+        .fish:nth-child(3) {
+            top: 60%;
+            animation-delay: 10s;
+        }
+
+        .video-container {
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 10px;
+        }
+
+        .info-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffa07a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .info-button:hover {
+            background: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crazy Exotic Fish Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="content.html">About Us</a></li>
+                <li><a href="content.html">Store</a></li>
+                <li><a href="content.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <section id="home">
+            <h2>Welcome to the Crazy Exotic Fish Store</h2>
+            <p>Explore our wide variety of exotic fish and aquarium supplies.</p>
+            <a href="content.html" class="info-button">Learn More About Us</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Crazy Exotic Fish Store</p>
+    </footer>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <img src="Fish-Png-123.png" class="fish" alt="Fish">
+    <img src="Fish-Png-123.png" class="fish" alt="Fish">
+    <img src="Fish-Png-123.png" class="fish" alt="Fish">
+</body>
+</html>
